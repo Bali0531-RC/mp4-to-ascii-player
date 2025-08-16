@@ -218,4 +218,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by [Bali0531-RC](https://github.com/Bali0531-RC)**
+**Made with ❤️ by [Bali0531](https://github.com/Bali0531-RC)**
