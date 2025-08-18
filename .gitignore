@@ -65,3 +65,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# PyInstaller build artifacts
+build_output/
+build_build/
+build_spec/
+*.spec

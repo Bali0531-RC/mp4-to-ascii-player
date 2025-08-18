@@ -218,4 +218,43 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by [Bali0531](https://github.com/Bali0531-RC)**
+**Made with ❤️ by [Bali0531 ](https://github.com/Bali0531-RC)**
+
+## Building a Windows Executable (.exe)
+
+You can package the player into a standalone Windows executable using PyInstaller.
+
+### Option 1: Using the provided batch script (recommended on Windows)
+```bat
+build_exe.bat --onefile --name ascii-player
+```
+This produces:
+- Single file: `build_output/ascii-player.exe`
+
+### Option 2: Using the shell script (Git Bash / WSL / MSYS2)
+```bash
+bash build_exe.sh --onefile --name ascii-player
+```
+
+### Option 3: Manual PyInstaller command
+```bash
+pyinstaller ascii.py --name ascii-player --onefile --clean \
+  --distpath build_output --workpath build_build --specpath build_spec
+```
+
+### Run the executable
+```bash
+./build_output/ascii-player.exe apple 30 true
+```
+
+### Notes
+- ffmpeg (ffplay) should be installed separately for audio sync.
+- If ffplay is not found, pygame fallback may have limited MP4 support.
+- Terminal emulators on Windows (Windows Terminal / Powershell) recommended.
+
+### Hungarian Quick Note / Magyar Rövid Útmutató
+Fordításhoz és buildeléshez Windows-on futtasd:
+```bat
+build_exe.bat --onefile --name ascii-player
+```
+Az eredmény a `build_output` mappában lesz.
